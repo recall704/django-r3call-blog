@@ -1,0 +1,35 @@
+.leftbar{
+    margin: 20px;
+    float: left;
+    margin-top: 80px;
+}
+
+.post-body{
+    margin: 45px;
+    width: 778px;
+    margin-top: 80px;
+    float: left;
+}
+
+.post-detail{
+    margin: 45px;
+    width: 778px;
+    margin-top: 80px;
+    float: left;   
+}
+
+.info {
+  border-top: 1px dotted #ccc;
+  padding-top: 5px;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 5px;
+}
+
+.content {
+  margin: 5px 0;
+  font-family: Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 100;
+  color: #2f2f2f;
+}

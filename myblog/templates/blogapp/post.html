@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+<!-- {% load markup %} -->
+
+
+{% block head_title %}post{% endblock %}
+
+
+
+{% block body %}
+
+
+
+<div class="post-detail">
+  <h3>{{ post.title }}</h3>
+  <div class="info"><i class="icon-user"></i>{{ post.author.username }}  /  <i class="icon-time"></i>{{ post.created|date:"Y/m/d H:i" }}</div>
+    <div class="content" style="width:770px;">
+        {{ post.content|safe }}
+    </div>
+
+
+    {% include "_duoshuo.html" %}
+
+
+{% endblock %}
