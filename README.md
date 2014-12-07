@@ -4,7 +4,7 @@ django-r3call-blog
 
 ## 关于  
 ***
-这是一个用django1.6.8写得blog，历时13小时.
+这是一个用django1.6.8写得blog，历时约13小时.
 
 
 ## 依赖
