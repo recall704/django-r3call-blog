@@ -12,5 +12,5 @@ Pillow==2.6.1
   
 admin:
 >
-username:root
+username:root  
 password:toor
