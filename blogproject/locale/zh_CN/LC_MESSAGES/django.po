@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-02 02:18+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: blogapp/models.py:35
+msgid "created"
+msgstr ""
+
+#: blogapp/models.py:36
+msgid "modified"
+msgstr ""
+
+#: blogapp/models.py:44
+msgid "category name"
+msgstr ""
+
+#: blogapp/models.py:63
+msgid "original"
+msgstr "原创"
+
+#: blogapp/models.py:64
+msgid "reproduce"
+msgstr "转载"
+
+#: blogapp/models.py:65
+msgid "sum-up"
+msgstr "总结"
+
+#: blogapp/models.py:66
+msgid "translation"
+msgstr "翻译"
+
+#: blogapp/models.py:68
+msgid "title"
+msgstr "标题"
+
+#: blogapp/models.py:69
+msgid "author"
+msgstr "作者"
+
+#: blogapp/models.py:70
+msgid "category"
+msgstr "分类"
+
+#: blogapp/models.py:72
+msgid "content"
+msgstr "内容"
+
+#: blogapp/models.py:73
+msgid "type"
+msgstr "类别"
+
+#: blogapp/models.py:128
+msgid "link name"
+msgstr ""
+
+#: templates/blogapp/post.html:82
+msgid "previous post:"
+msgstr "上一篇"
+
+#: templates/blogapp/post.html:94
+msgid "next post:"
+msgstr "下一篇"
+
+#: templates/pagination/pagination.html:8
+#: templates/pagination/pagination.html:11
+msgid "Previous Page"
+msgstr "上一页"
+
+#: templates/pagination/pagination.html:21
+#: templates/pagination/pagination.html:23
+msgid "Next Page"
+msgstr "下一页"
+
+#: templates/pagination/pagination.html:30
+#: templates/pagination/pagination.html:33
+msgid "上一页"
+msgstr ""
+
+#: templates/pagination/pagination.html:43
+#: templates/pagination/pagination.html:45
+msgid "下一页"
+msgstr ""
+
+#: thirdparty/tagging/fields.py:69
+#, python-format
+msgid "%s can only be set on instances."
+msgstr ""
+
+#: thirdparty/tagging/forms.py:19
+msgid "Multiple tags were given."
+msgstr ""
+
+#: thirdparty/tagging/forms.py:22
+#, python-format
+msgid "A tag may be no more than %s characters long."
+msgstr ""
+
+#: thirdparty/tagging/forms.py:38
+#, python-format
+msgid "Each tag may be no more than %s characters long."
+msgstr ""
+
+#: thirdparty/tagging/models.py:58
+#, python-format
+msgid "No tags were given: \"%s\"."
+msgstr ""
+
+#: thirdparty/tagging/models.py:60
+#, python-format
+msgid "Multiple tags were given: \"%s\"."
+msgstr ""
+
+#: thirdparty/tagging/models.py:460
+msgid "name"
+msgstr ""
+
+#: thirdparty/tagging/models.py:466 thirdparty/tagging/models.py:476
+msgid "tag"
+msgstr ""
+
+#: thirdparty/tagging/models.py:467
+msgid "tags"
+msgstr ""
+
+#: thirdparty/tagging/models.py:477
+msgid "content type"
+msgstr ""
+
+#: thirdparty/tagging/models.py:478
+msgid "object id"
+msgstr ""
+
+#: thirdparty/tagging/models.py:486
+msgid "tagged item"
+msgstr ""
+
+#: thirdparty/tagging/models.py:487
+msgid "tagged items"
+msgstr ""
+
+#: thirdparty/tagging/utils.py:189
+msgid ""
+"If a list or tuple of tags is provided, they must all be tag names, Tag "
+"objects or Tag ids."
+msgstr ""
+
+#: thirdparty/tagging/utils.py:191
+msgid "The tag input given was invalid."
+msgstr ""
+
+#: thirdparty/tagging/utils.py:236
+#, python-format
+msgid "Invalid distribution algorithm specified: %s."
+msgstr ""
+
+#: thirdparty/tagging/views.py:33
+msgid "tagged_object_list must be called with a queryset or a model."
+msgstr ""
+
+#: thirdparty/tagging/views.py:39
+msgid "tagged_object_list must be called with a tag."
+msgstr ""
+
+#: thirdparty/tagging/views.py:43
+#, python-format
+msgid "No Tag found matching \"%s\"."
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:19
+#, python-format
+msgid "tags_for_model tag was given an invalid model: %s"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:32
+#, python-format
+msgid "tag_cloud_for_model tag was given an invalid model: %s"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:56
+#, python-format
+msgid "tagged_objects tag was given an invalid model: %s"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:89
+#, python-format
+msgid "%s tag requires either three or five arguments"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:91
+#: thirdparty/tagging/templatetags/tagging_tags.py:143
+#: thirdparty/tagging/templatetags/tagging_tags.py:198
+#, python-format
+msgid "second argument to %s tag must be 'as'"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:94
+#: thirdparty/tagging/templatetags/tagging_tags.py:147
+#, python-format
+msgid "if given, fourth argument to %s tag must be 'with'"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:96
+#, python-format
+msgid "if given, fifth argument to %s tag must be 'counts'"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:141
+#, python-format
+msgid "%s tag requires either three or between five and seven arguments"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:155
+#, python-format
+msgid "%(tag)s tag's '%(option)s' option was not a valid integer: '%(value)s'"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:164
+#, python-format
+msgid "%(tag)s tag's '%(option)s' option was not a valid choice: '%(value)s'"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:170
+#, python-format
+msgid "%(tag)s tag was given an invalid option: '%(option)s'"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:175
+#, python-format
+msgid "%(tag)s tag was given a badly formatted option: '%(option)s'"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:196
+#, python-format
+msgid "%s tag requires exactly three arguments"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:221
+#, python-format
+msgid "%s tag requires exactly five arguments"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:223
+#, python-format
+msgid "second argument to %s tag must be 'in'"
+msgstr ""
+
+#: thirdparty/tagging/templatetags/tagging_tags.py:225
+#, python-format
+msgid "fourth argument to %s tag must be 'as'"
+msgstr ""

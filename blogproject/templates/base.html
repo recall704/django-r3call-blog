@@ -1,0 +1,89 @@
+{% load staticfiles %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        R3CALL
+        {% block head_title_base %}
+            {% block head_title %}
+            {% endblock %}
+        {% endblock %}
+    </title>
+    <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}pygments-css/manni.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.min.css"> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ STATIC_URL }}/bootstrap/js/bootstrap.min.js"></script>
+
+    {% block extra_style %}
+    {% endblock %}
+
+    {% block script_base %}
+        <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    {% endblock %}
+
+
+    {% block extra_script %}
+    {% endblock %}
+
+    {% block extra_head %}
+    
+    {% endblock %}
+
+</head>
+<body>
+
+    {% block topbar_base %}
+        {% include "_topbar.html" %}
+    {% endblock %}
+
+
+<div class="container-fluid">
+    {% block body_base %}
+        {% block body %}
+        {% endblock %}
+    {% endblock %}
+
+
+    {% block footer_base %}
+        <div class="footer">
+            <div class="inner">
+                <div class="container">
+                    {% block footer %}{% include "_footer.html" %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block extra_body %}
+    {% endblock %}
+</div>
+
+
+{% comment %}
+<div id="elevator_item">
+        <a id="elevator" onclick="return false;" title="回到顶部"></a>
+        <a class="qr"></a>
+    <div class="qr-popup">
+        <a class="code-link"><img class="code" src="/static/img/wx.jpg"/></a>
+        <span>添加微信好友</span>
+    <div class="arr"></div>
+  </div>
+</div>
+{% endcomment %}
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+
+
+{% block head_title %}
+    {% if post.title %}
+        {{ post.title }}
+    {% endif %}
+{% endblock %}
+
+
+
+{% block body %}
+
+<div class="row">
+  {% if messages %}
+    {% for msg in messages %}
+      {{ msg }}
+    {% endfor %}
+  {% endif %}
+</div>
+
+
+<div class="row">
+    <div class="col-md-12 col-xs-12 col-lg-10 col-sm-12">
+        <form action="" method="POST" class="form-horizontal">
+            {% csrf_token %}
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label for="id_title" class="col-sm-2 col-xs-2 col-md-2 col-lg-2 control-label">Title:</label>
+                    <div class="col-sm-10 col-xs-10 col-md-10 col-lg-10">
+                        <input id="id_title" maxlength="128" name="title" type="text" class="form-control" {% if post %}value="{{ post.title }}"{% endif %}>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id_category" class="col-sm-2 col-xs-2 col-md-2 col-lg-2 control-label">Category:</label>
+                    <div class="col-sm-10 col-xs-10 col-md-4 col-lg-3">
+                        <select id="id_category" name="category" class="form-control">
+                            {% if post.category %}
+                                {% for cat in categories %}
+                                    {% ifequal post.category.id cat.id %}
+                                        <option value="{{ cat.id }}" selected="selected">{{ cat }}</option>
+                                    {% else %}
+                                        <option value="{{ cat.id }}">{{ cat }}</option>
+                                    {% endifequal %}
+                                {% endfor %}
+                            {% else %}
+                                <option value="" selected="selected">---------</option>
+                                {% for cat in categories %}
+                                    <option value="{{ cat.id }}">{{ cat }}</option>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id_tags" class="col-sm-2 col-xs-2 col-md-2 col-lg-2 control-label">Tags:</label>
+                    <div class="col-sm-10 col-xs-10 col-md-10 col-lg-10">
+                        <input id="id_tags" maxlength="255" name="tags" type="text" class="form-control" {% if post %}value="{{ post.tags }}"{% endif %}>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id_tags" class="col-sm-2 col-xs-2 col-md-2 col-lg-2 control-label">Exists Tags:</label>
+                    <div class="col-sm-10">
+                        {% for tag in tags %}
+                            <a href="#" class="badge" id="id-tag-{{tag.id}}" data="{{tag}}">
+                              {{ tag }}
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="id_content" class="col-sm-2 col-xs-2 col-md-2 col-lg-2 control-label">Content:</label>
+                    <div class="col-sm-10 col-xs-10 col-md-10 col-lg-10">
+                        <ul id="myTab" class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+                                    Edit
+                                </a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">
+                                    Preview
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                                <textarea cols="40" id="id_content" name="content" rows="15" class="form-control" style="border-top:0px dashed;">{% if post %}{{ post.content }}{% endif %}</textarea>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">
+                        {% if post %}
+                            修改
+                        {% else %}
+                            添加
+                        {% endif %}
+                </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block extra_body %}
+<script>
+$(document).ready(function(){
+    $('[id^=id-tag-]').click(function(){
+      var html = $(this).attr('data');
+      console.log(html);
+      var v = $('#id_tags').val();
+      if(v == "" ){
+        $('#id_tags').val(html);
+      }
+      else{
+        $('#id_tags').val(v + " " + html);
+      }
+    });
+
+    $('#myTab a[href="#profile"]').click(function(){
+        var md = $('#id_content').val();
+        $.ajax({
+            url:"{% url 'ajax_markdown_preview' %}",
+            type:"post",
+            data:{'md':md,'csrfmiddlewaretoken': '{{ csrf_token }}'},
+            dataType:"json",
+            success:function(response){
+                $('#profile').html(response.html);
+                console.log(response);
+                $('#myTab a[href="#profile"]').tab('show');
+            },
+            error:function(e){
+                console.log(e);
+                $('#profile').html(e.msg);
+                console.log('error');
+            },
+        });
+    });
+});
+</script>
+{% endblock %}

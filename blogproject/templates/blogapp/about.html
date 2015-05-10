@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+<!-- {% load markup %} -->
+
+
+{% block head_title %} 关于 {% endblock %}
+
+
+
+{% block body %}
+
+    <div class="row">
+        <div class="left-bar col-md-2 col-xs-12 col-lg-2 col-sm-3">
+            <div class="category hidden-xs">
+                <div class="panel-body">
+                    <h4>文章分类</h4>
+                    {% if categories %}
+                    <ul class="list-group">
+                    {% for c in categories %}
+                      <li class="list-group-item">
+                        <a href="{{ c.get_absolute_url }}" title="{{ c.name }}">
+                        <!-- <i class="glyphicon glyphicon-list"></i> -->
+                        {{ c.name|slice:"8" }}{% if c.name|length > 8 %}...{% endif %}
+                            <span class="badge badge-info pull-right"> {{ c.count }} </span>
+                      </a>
+                      </li>
+                    {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+
+                <hr />
+                <div class="friends_links">
+                    <div class="panel-body">
+                        <h4>友情链接</h4>
+                        {% if links %}
+                        <ul class="list-group">
+                        {% for l in links %}
+                          <li class="list-group-item">
+                            <a href="{{ l.url }}" target="_blank" title="{{ l.name }}">
+                                {{ l.name|slice:"6" }}{% if l.name|length > 6 %}...{% endif %}
+                            </a>
+                          </li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content col-md-9 col-xs-11 col-lg-9 col-sm-8">
+            <div class="post-detail">
+              <h3> 关于 </h3>
+
+                <div class="content" style="width:770px;">
+                    <p>Email : tk657309822@gmail.com</p>
+                    <p> 搭建环境：django 1.6.8 + nginx</p>
+                    <p> 博客源码：https://github.com/recall704/django-r3call-blog</p>
+                </div>
+            </div>
+
+            {% include "_duoshuo.html" %}
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

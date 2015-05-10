@@ -1,0 +1,778 @@
+[2015-04-19 18:48:51,477]-[143-get_response]-WARNING : Not Found: /
+[19/Apr/2015 18:48:51] "GET / HTTP/1.1" 404 2009
+[2015-04-19 18:48:51,638]-[143-get_response]-WARNING : Not Found: /favicon.ico
+[19/Apr/2015 18:48:56] "GET /blog/ HTTP/1.1" 200 26833
+[19/Apr/2015 18:48:56] "GET /static/img/favicon.ico HTTP/1.1" 404 1653
+[19/Apr/2015 18:55:14] "GET /blog/ HTTP/1.1" 200 26833
+[19/Apr/2015 18:55:14] "GET /static/img/favicon.ico HTTP/1.1" 404 1653
+[2015-04-19 18:55:37,536]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/19/
+Traceback (most recent call last):
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/pi/pycode/blogenv/blogproject/blogapp/views.py", line 154, in edit
+    },context)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 131, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/post_forms.html
+[19/Apr/2015 18:55:38] "GET /blog/edit/19/ HTTP/1.1" 500 109777
+[2015-04-19 18:55:38,532]-[143-get_response]-WARNING : Not Found: /favicon.ico
+[19/Apr/2015 18:56:35] "GET /blog/ HTTP/1.1" 200 26833
+[19/Apr/2015 18:56:35] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[19/Apr/2015 18:56:35] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[19/Apr/2015 18:56:35] "GET /static/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[2015-04-19 18:56:41,849]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/post/19/为什么一点onclick按钮就提交表单？/
+Traceback (most recent call last):
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/pycode/blogenv/blogproject/blogapp/views.py", line 47, in post
+    },context)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 131, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/post.html
+[19/Apr/2015 18:56:42] "GET /blog/post/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E7%82%B9onclick%E6%8C%89%E9%92%AE%E5%B0%B1%E6%8F%90%E4%BA%A4%E8%A1%A8%E5%8D%95%EF%BC%9F/ HTTP/1.1" 500 102165
+[19/Apr/2015 19:03:58] "GET /blog/ HTTP/1.1" 200 26773
+[19/Apr/2015 19:03:58] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[19/Apr/2015 19:03:58] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[19/Apr/2015 19:03:59] "GET /static/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[19/Apr/2015 19:07:00] "GET /static/img/favicon.ico HTTP/1.1" 404 1653
+[19/Apr/2015 19:58:10] "GET /static/img/favicon.ico HTTP/1.1" 404 1653
+[20/Apr/2015 10:09:17] "GET /blog/ HTTP/1.1" 200 26833
+[20/Apr/2015 10:09:17] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Apr/2015 10:09:17] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Apr/2015 10:09:17] "GET /static/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[20/Apr/2015 10:09:18] "GET /static/img/favicon.ico HTTP/1.1" 404 1653
+[20/Apr/2015 10:16:48] "GET /blog/ HTTP/1.1" 200 26833
+[20/Apr/2015 10:16:48] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Apr/2015 10:16:48] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Apr/2015 10:16:48] "GET /static/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[20/Apr/2015 10:19:30] "GET /blog/ HTTP/1.1" 200 27284
+[20/Apr/2015 10:19:30] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Apr/2015 10:19:30] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Apr/2015 10:19:30] "GET /static/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[20/Apr/2015 10:20:20] "GET /blog/ HTTP/1.1" 200 26950
+[20/Apr/2015 10:20:21] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Apr/2015 10:20:21] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Apr/2015 10:20:21] "GET /static/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[20/Apr/2015 10:20:40] "GET /blog/ HTTP/1.1" 200 26995
+[20/Apr/2015 10:20:40] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Apr/2015 10:20:40] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Apr/2015 10:20:40] "GET /static/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[20/Apr/2015 10:21:25] "GET /blog/ HTTP/1.1" 200 27050
+[20/Apr/2015 10:21:25] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Apr/2015 10:21:25] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Apr/2015 10:21:25] "GET /static/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[20/Apr/2015 10:25:41] "GET /blog/ HTTP/1.1" 200 27145
+[20/Apr/2015 10:25:41] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Apr/2015 10:25:41] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Apr/2015 10:25:41] "GET /static/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[20/Apr/2015 10:26:22] "GET /blog/ HTTP/1.1" 200 27050
+[20/Apr/2015 10:26:23] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Apr/2015 10:26:23] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Apr/2015 10:26:23] "GET /static/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[2015-04-20 10:27:23,475]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/post/19/为什么一点onclick按钮就提交表单？/
+Traceback (most recent call last):
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/pycode/blogenv/blogproject/blogapp/views.py", line 47, in post
+    },context)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/pi/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 131, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/post.html
+[20/Apr/2015 10:27:24] "GET /blog/post/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E7%82%B9onclick%E6%8C%89%E9%92%AE%E5%B0%B1%E6%8F%90%E4%BA%A4%E8%A1%A8%E5%8D%95%EF%BC%9F/ HTTP/1.1" 500 102165
+[2015-04-20 10:27:24,430]-[143-get_response]-WARNING : Not Found: /favicon.ico
+[20/Apr/2015 10:27:56] "GET /blog/post/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E7%82%B9onclick%E6%8C%89%E9%92%AE%E5%B0%B1%E6%8F%90%E4%BA%A4%E8%A1%A8%E5%8D%95%EF%BC%9F/ HTTP/1.1" 200 0
+[20/Apr/2015 10:29:00] "GET /blog/post/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E7%82%B9onclick%E6%8C%89%E9%92%AE%E5%B0%B1%E6%8F%90%E4%BA%A4%E8%A1%A8%E5%8D%95%EF%BC%9F/ HTTP/1.1" 200 6492
+[20/Apr/2015 10:29:00] "GET /static//bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Apr/2015 10:29:00] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[2015-04-20 08:24:26 +0000] [8165] [INFO] Starting gunicorn 19.3.0
+[2015-04-20 08:24:26 +0000] [8165] [INFO] Listening at: http://127.0.0.1:1010 (8165)
+[2015-04-20 08:24:26 +0000] [8165] [INFO] Using worker: sync
+[2015-04-20 08:24:26 +0000] [8170] [INFO] Booting worker with pid: 8170
+[2015-04-20 12:24:41,482]-[143-get_response]-WARNING : Not Found: /
+[2015-04-20 12:24:59,180]-[143-get_response]-WARNING : Not Found: /
+[2015-04-20 08:26:50 +0000] [8165] [INFO] Handling signal: term
+[2015-04-20 08:26:50 +0000] [8165] [INFO] Shutting down: Master
+[2015-04-20 08:39:42 +0000] [8247] [INFO] Starting gunicorn 19.3.0
+[2015-04-20 08:39:42 +0000] [8247] [INFO] Listening at: http://127.0.0.1:1010 (8247)
+[2015-04-20 08:39:42 +0000] [8247] [INFO] Using worker: sync
+[2015-04-20 08:39:42 +0000] [8252] [INFO] Booting worker with pid: 8252
+[2015-04-20 13:03:05,298]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/add/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 124, in add
+    },context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 131, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/post_forms.html
+[2015-04-20 13:03:23,187]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/add/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 124, in add
+    },context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 131, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/post_forms.html
+[2015-04-20 13:04:19,787]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/add/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 124, in add
+    },context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 131, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/post_forms.html
+[2015-04-20 13:04:35,677]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/19/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    },context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 131, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/post_forms.html
+[2015-04-20 13:04:49,069]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/19/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    },context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 131, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/post_forms.html
+[2015-04-20 13:04:52,902]-[143-get_response]-WARNING : Not Found: /robots.txt
+[2015-04-20 13:06:39,451]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 13:06:39,497]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 13:07:22,002]-[143-get_response]-WARNING : Not Found: /robots.txt
+[2015-04-20 13:10:52,068]-[176-get_response]-ERROR : Invalid HTTP_HOST header: '104.224.130.131'.You may need to add u'104.224.130.131' to ALLOWED_HOSTS.
+[2015-04-20 13:18:29,290]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 13:22:37,222]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 13:23:26,619]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 13:23:26,670]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 13:23:30,895]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 13:23:30,936]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 13:24:21,045]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 13:24:21,080]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 13:24:58,826]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 13:25:24,852]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 13:25:34,849]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 13:38:46,611]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 13:45:48,515]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'bwg.r3call.com'.You may need to add u'bwg.r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 14:24:32,593]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 14:24:42,482]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 14:24:58,638]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 14:48:26,482]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 15:24:59,621]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 15:32:02,540]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 15:32:02,967]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 15:37:01,568]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 15:37:02,902]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 15:37:03,897]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 15:37:05,432]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 15:37:05,960]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 15:37:06,509]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 15:37:20,218]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 15:55:06,440]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 16:18:27,103]-[143-get_response]-WARNING : Not Found: /robots.txt
+[2015-04-20 16:25:00,480]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 16:55:42,917]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 17:03:35,985]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 17:11:50,935]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 17:25:00,568]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 17:25:01,982]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 17:59:03,945]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 18:05:57,296]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 18:12:56,617]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 18:16:57,735]-[143-get_response]-WARNING : Not Found: /robots.txt
+[2015-04-20 18:19:02,136]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 18:25:00,667]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 18:26:46,954]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 18:32:12,548]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 18:32:12,582]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 18:33:12,709]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 18:46:09,900]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 19:01:25,910]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 19:08:40,174]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 19:19:29,948]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 19:19:29,981]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 19:23:26,032]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 19:23:26,095]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 19:25:00,689]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 19:51:00,632]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 19:59:10,346]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 20:07:52,985]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 20:25:02,777]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 20:27:15,314]-[176-get_response]-ERROR : Invalid HTTP_HOST header: '24x7-allrequestsallowed.com'.You may need to add u'24x7-allrequestsallowed.com' to ALLOWED_HOSTS.
+[2015-04-20 20:42:23,326]-[143-get_response]-WARNING : Not Found: /robots.txt
+[2015-04-20 20:42:23,692]-[143-get_response]-WARNING : Not Found: /yjdkjmmkyvcrnmr.html
+[2015-04-20 21:17:02,725]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 21:24:57,882]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 21:25:00,140]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 21:36:23,800]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 21:58:50,643]-[143-get_response]-WARNING : Not Found: /robots.txt
+[2015-04-20 22:07:58,119]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 22:13:17,954]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 22:13:54,225]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-20 22:16:28,629]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 22:21:22,846]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 22:24:59,929]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 23:07:39,147]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 23:15:43,756]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-20 23:25:00,045]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-20 23:49:33,716]-[176-get_response]-ERROR : Invalid HTTP_HOST header: '104.224.130.131'.You may need to add u'104.224.130.131' to ALLOWED_HOSTS.
+[2015-04-20 23:59:52,622]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 00:07:34,058]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 00:17:04,242]-[143-get_response]-WARNING : Not Found: /robots.txt
+[2015-04-21 00:18:22,659]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:20:29,584]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:24:59,899]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 00:45:43,971]-[107-decode]-WARNING : Session data corrupted
+[2015-04-21 00:45:53,928]-[107-decode]-WARNING : Session data corrupted
+[2015-04-21 00:46:13,312]-[107-decode]-WARNING : Session data corrupted
+[2015-04-21 00:47:12,756]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:47:43,918]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:48:01,487]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:48:08,139]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:48:15,117]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:48:50,940]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:48:57,947]-[176-get_response]-ERROR : Invalid HTTP_HOST header: '104.224.130.131'.You may need to add u'104.224.130.131' to ALLOWED_HOSTS.
+[2015-04-21 00:48:58,330]-[176-get_response]-ERROR : Invalid HTTP_HOST header: '104.224.130.131'.You may need to add u'104.224.130.131' to ALLOWED_HOSTS.
+[2015-04-21 00:48:58,715]-[176-get_response]-ERROR : Invalid HTTP_HOST header: '104.224.130.131'.You may need to add u'104.224.130.131' to ALLOWED_HOSTS.
+[2015-04-21 00:48:59,075]-[176-get_response]-ERROR : Invalid HTTP_HOST header: '104.224.130.131'.You may need to add u'104.224.130.131' to ALLOWED_HOSTS.
+[2015-04-21 00:48:59,443]-[176-get_response]-ERROR : Invalid HTTP_HOST header: '104.224.130.131'.You may need to add u'104.224.130.131' to ALLOWED_HOSTS.
+[2015-04-21 00:49:15,507]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:49:38,055]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:50:01,087]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:50:20,690]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 00:50:24,163]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:50:47,617]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 00:57:55,468]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 01:05:32,552]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 01:25:00,682]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 01:57:12,442]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 02:03:52,013]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 02:25:01,767]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 02:56:10,189]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 03:00:03,906]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 03:03:03,895]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 03:25:00,053]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 03:26:13,819]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 03:55:08,136]-[107-decode]-WARNING : Session data corrupted
+[2015-04-21 03:55:11,427]-[107-decode]-WARNING : Session data corrupted
+[2015-04-21 03:55:14,598]-[107-decode]-WARNING : Session data corrupted
+[2015-04-21 03:55:19,611]-[107-decode]-WARNING : Session data corrupted
+[2015-04-21 03:55:19,804]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 03:55:30,875]-[107-decode]-WARNING : Session data corrupted
+[2015-04-21 03:55:32,723]-[107-decode]-WARNING : Session data corrupted
+[2015-04-21 03:55:32,897]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 03:59:19,960]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 04:03:08,922]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 04:05:29,788]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 04:25:04,928]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 04:57:03,087]-[143-get_response]-WARNING : Not Found: /robots.txt
+[2015-04-21 04:57:09,354]-[143-get_response]-WARNING : Not Found: /”http://maps.metropcs.com/
+[2015-04-21 04:58:30,321]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 05:02:57,123]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 05:07:12,736]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 05:25:00,050]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 05:52:09,366]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 06:01:20,868]-[176-get_response]-ERROR : Invalid HTTP_HOST header: '104.224.130.131'.You may need to add u'104.224.130.131' to ALLOWED_HOSTS.
+[2015-04-21 06:19:41,726]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 06:25:00,045]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 06:27:10,557]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 06:39:43,247]-[176-get_response]-ERROR : Invalid HTTP_HOST header: '104.224.130.131'.You may need to add u'104.224.130.131' to ALLOWED_HOSTS.
+[2015-04-21 07:14:19,318]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 07:25:01,265]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 08:21:27,068]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 08:24:59,894]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 08:28:57,879]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 08:29:16,306]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 08:48:38,830]-[143-get_response]-WARNING : Not Found: /robots.txt
+[2015-04-21 09:01:16,060]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 09:03:43,832]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 09:08:03,879]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 09:25:00,683]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 09:59:21,361]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 10:05:55,143]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 10:11:53,731]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 10:12:22,212]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 10:12:25,305]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 10:13:36,102]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 10:13:44,002]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 10:14:07,336]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 10:14:23,358]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 10:15:06,138]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 10:25:00,341]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 11:22:11,436]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 11:22:28,633]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 11:22:45,519]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 11:23:02,439]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 11:23:20,374]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 11:23:36,229]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 11:23:53,315]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 11:25:00,520]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 12:18:02,076]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 12:18:02,477]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 12:25:00,288]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 13:11:35,140]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 13:24:59,936]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 14:25:00,392]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 14:25:37,925]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 14:51:09,392]-[143-get_response]-WARNING : Not Found: /robots.txt
+[2015-04-21 14:51:12,201]-[143-get_response]-WARNING : Not Found: /accounts/login/
+[2015-04-21 14:57:09,974]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'bwg.r3call.com'.You may need to add u'bwg.r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 15:24:59,989]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 15:58:51,338]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 16:06:30,486]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 16:25:00,330]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'kiwiproxychecker.sioru.com'.You may need to add u'kiwiproxychecker.sioru.com' to ALLOWED_HOSTS.
+[2015-04-21 16:33:58,957]-[176-get_response]-ERROR : Invalid HTTP_HOST header: 'r3call.com'.You may need to add u'r3call.com' to ALLOWED_HOSTS.
+[2015-04-21 16:54:30,520]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/20/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    },context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 536, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 456, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'ajax_markdown_preview' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2015-04-21 16:54:33,870]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/20/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    },context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 536, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 456, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'ajax_markdown_preview' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2015-04-21 16:54:35,695]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/20/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    },context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 536, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 456, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'ajax_markdown_preview' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2015-04-21 16:54:37,715]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/20/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    },context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 536, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 456, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'ajax_markdown_preview' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2015-04-21 16:55:09,363]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/20/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    categories = Category.objects.all()
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 536, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 456, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'ajax_markdown_preview' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2015-04-21 16:55:14,059]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/20/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    categories = Category.objects.all()
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 536, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 456, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'ajax_markdown_preview' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2015-04-21 16:55:18,806]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/20/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    categories = Category.objects.all()
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 536, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 456, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'ajax_markdown_preview' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2015-04-21 16:55:20,656]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/20/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    categories = Category.objects.all()
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 536, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 456, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'ajax_markdown_preview' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2015-04-21 16:57:45,029]-[224-handle_uncaught_exception]-ERROR : Internal Server Error: /blog/edit/20/
+Traceback (most recent call last):
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/root/pycode/blogproject/blogapp/views.py", line 151, in edit
+    categories = Category.objects.all()
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 536, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/root/pycode/blogenv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 456, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'ajax_markdown_preview' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+[2015-04-21 12:58:31 +0000] [8247] [INFO] Handling signal: term
+[2015-04-21 12:58:31 +0000] [8247] [INFO] Shutting down: Master

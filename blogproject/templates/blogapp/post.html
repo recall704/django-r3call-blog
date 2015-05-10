@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% load markup %}
+{% load i18n %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="left-bar col-md-2 col-xs-12 col-lg-2 col-sm-3">
+            <div class="category hidden-xs">
+                <div class="panel-body">
+                    <h4>文章分类</h4>
+                    {% if categories %}
+                    <ul class="list-group">
+                    {% for c in categories %}
+                      <li class="list-group-item">
+                        <a href="{{ c.get_absolute_url }}" title="{{ c.name }}">
+                        <!-- <i class="glyphicon glyphicon-list"></i> -->
+                        {{ c.name|slice:"8" }}{% if c.name|length > 8 %}...{% endif %}
+                            <span class="badge badge-info pull-right"> {{ c.count }} </span>
+                      </a>
+                      </li>
+                    {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+
+                <hr />
+                <div class="friends_links">
+                    <div class="panel-body">
+                        <h4>友情链接</h4>
+                        {% if links %}
+                        <ul class="list-group">
+                        {% for l in links %}
+                          <li class="list-group-item">
+                            <a href="{{ l.url }}" target="_blank" title="{{ l.name }}">
+                                {{ l.name|slice:"6" }}{% if l.name|length > 6 %}...{% endif %}
+                            </a>
+                          </li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content col-md-9 col-xs-11 col-lg-9 col-sm-8">
+            <div class="post-detail">
+              <h3>{{ post.title }}</h3>
+              <div class="info"><i class="icon-user"></i>{{ post.author.username }}  /  <i class="icon-time"></i>
+                  {% if user.is_authenticated %}
+                    {{ post.created|date:"Y-m-d H:i" }}
+                  {% else %}
+                    {{ post.created|date:"Y-m-d" }}
+                  {% endif %}
+
+                <a href="{% url 'edit' post.id %}">编辑</a>
+
+                      <div id="id-tags" class="tags pull-right">
+                          {% for tag in post.ptags %}
+                            <a href="{% url 'tag' tag.id %}">
+                                <span class="badge">
+                                    {{ tag }}
+                                </span>
+                            </a>
+                          {% endfor %}
+                      </div>
+              </div>
+              <div class="clearfix"></div>
+
+              <br />
+
+              <div class="content">
+                  {{ post.content|gfm_markdown }}
+              </div>
+
+                <br />
+                <hr />
+                <div class="next-or-previous container-fluid">
+                    <div class="previous col-md-6 col-lg-6 col-sm-6 hidden-xs">
+                        <span class="label label-info">
+                            {% trans "previous post:" %}
+                        </span>
+                        {% if post.previous %}
+                            <a href="{{ post.previous.get_absolute_url }}">
+                                {{post.previous.title}}
+                            </a>
+                        {% else %}
+                            没有了
+                        {% endif %}
+                    </div>
+                    <div class="next col-md-6 col-lg-6 col-sm-6 hidden-xs">
+                        <span class="label label-info">
+                            {% trans "next post:" %}
+                        </span>
+                        {% if post.next %}
+                            <a href="{{ post.next.get_absolute_url }}">
+                                {{post.next.title}}
+                            </a>
+                        {% else %}
+                            没有了
+                        {% endif %}
+                    </div>
+                    <!-- 适配手机 -->
+                    <div class="visible-xs-* hidden-sm hidden-md hidden-lg col-xs-6">
+                        {% if post.previous %}
+                            <a href="{{ post.previous.get_absolute_url }}" class="btn btn-default">
+                                {% trans "previous post:" %}
+                            </a>
+                        {% else %}
+                            <a href="#" class="btn btn-default disabled">
+                                没有了
+                            </a>
+                        {% endif %}
+                    </div>
+                    <div class="visible-xs-* hidden-sm hidden-md hidden-lg col-xs-6">
+                        {% if post.next %}
+                            <a href="{{ post.next.get_absolute_url }}" class="btn btn-default">
+                                {% trans "next post:" %}
+                            </a>
+                        {% else %}
+                            <a href="#" class="btn btn-default disabled">
+                                没有了
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <br />
+            <hr />
+            <div class="duoshuo hidden-xs hidden-sm">
+                {% include "_duoshuo.html" %}
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
